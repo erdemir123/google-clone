@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    height: 100vh;
+}
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* overflow: hidden; */
+}
+header{
+    width: 90%;
+    height: 4.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 20px 0 20px;
+    
+}
+header .nav-left a{
+    color: black;
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 4.5rem;
+}
+header .nav-right a{
+    color: black;
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 4.5rem;
+}
+header .nav-right{
+    position: relative;
+    display: flex;
+}
+header .nav-right div{
+    margin-right: 140px;
+}
+header .nav-right img{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top:20px;
+    right: 100px;
+}
+header .nav-right img:hover{
+    background-color: rgba(128, 128, 128, 0.377);
+
+}
+header .nav-right button{
+    width: 90px;
+    height: 50px;
+    padding: 1px 6px;
+    color:#fff;
+    background-color: #4285f4;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    right:0;
+    top:10px;
+}
+
+main{
+    width: 100%;
+    height:590px ;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+}
+main .image{
+    width:350px;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+}
+main .image img{
+    width: 100%;
+    min-width: 200px;
+}
+main .main-p {
+    font-size: 20px;
+}
+main .search{
+    position: relative;
+}
+main .search input{
+    width: 40rem;
+    height: 60px;
+    border-radius: 40px;
+    background-color: #fff;
+    border: 1px solid rgb(206, 205, 205);
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-indent: 50px;
+    font-size:1.2rem;
+    cursor: pointer;
+}
+
+main .search input:hover{
+    box-shadow: 2px 2px 7.5px gray;
+}
+
+main .search .resim1{
+    width: 35px;
+    position: absolute;
+    top: 45px;
+    left: 10px;
+    cursor: pointer;
+}
+main .search .resim2{
+    width: 20px;
+    position: absolute;
+    top: 45px;
+    right: 20px;
+    cursor: pointer;
+}
+
+main .buttons{
+    margin-bottom: 20px;
+}
+main .buttons button{
+    padding:10px 15px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    margin-right: 10px;
+}
+main .buttons button:hover{
+    box-shadow: 1px 3px gainsboro;
+}
+main .search input:focus{
+    outline: none !important;
+}
+footer{
+    height: 140px;
+    width: 100%;
+    background-color: #e4e4e4;
+    margin-top: auto;
+}
+footer .fo-top{
+
+    height: 45px;
+    border-bottom: 1px solid rgba(180, 179, 179, 0.486);
+    margin-left: 40px;
+    line-height: 45px;
+    font-size: 20px;
+}
+footer .fo-lower{
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+footer .fo-lower .fo-low-right a{
+    color: black;
+    padding-left: 40px;
+    
+}
+footer .fo-lower .fo-low-left a{
+    color: black;
+    padding: 0 40px;
+    
+}
+
+@media (max-width: 900px) {
+    footer{
+        margin-bottom: 40px;
+
+   }
+    footer .fo-lower{
+        flex-direction: column;
+        gap: 10px;
+        
+    }
+    footer .fo-top{
+        text-align: center;
+        margin: 0 auto;
+    }
+    main .search input{
+        width: 25rem;
+        height: 50px;
+    }
+    main .image img{
+        width: 200px;
+    }
+    main .main-p{
+        font-size: 16px;
+    }
+    
+}

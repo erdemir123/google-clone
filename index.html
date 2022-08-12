@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="nav-left">
+        <a href="#">About</a>
+        <a href="#">Store</a>
+    </div>
+    <div class="nav-right">
+        <div>
+            <a href="#">Gmail</a>
+            <a href="#">Images</a>
+        </div>
+        <img src="appicon.png" alt="icon">
+
+        <button>Sign In</button>
+    </div>
+</header>
+
+<main>
+<div class="image">
+    <img src="googlelogo.png" alt="">
+</div>
+<div class="search">
+    <input type="text" id="input" value=" ">
+    <img class="resim1" src="magnifying_glass.jpg" alt="">
+    <img class="resim2" src="google_microphone.png" alt="">
+</div>
+<div class="buttons">
+    <button id="btn-search"  >Google Search</button>
+    <button>I'm Feeling Lucky</button>
+</div>
+<div class="main-p">
+    <span>Other Languages You Can Use Google:</span>
+    <a href="#">English</a>
+</div>
+</main>
+<footer>
+    <div class="fo-top">
+        <p>Turkey</p>
+    </div>
+    <div class="fo-lower">
+        <div class="fo-low-right">
+            <a href="#">Advertising</a>
+            <a href="#">Business</a>
+            <a href="#">How Search Works</a>
+        </div>
+        <div class="fo-low-left">
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Settings</a>
+        </div>
+    </div>
+</footer>
+<!-- JAvascript kodlarınıda yazdım search basın  -->
+<script>
+    let search = document.getElementById("btn-search")
+    let arama = document.getElementById("input")
+
+    search.onclick = function(){
+        let url = 'https://www.google.com/search?q='+arama.value;
+        window.open(url);
+    }
+
+</script>
+
+
+  
+</body>
+</html>
